@@ -11,10 +11,10 @@ export let options = {
     },
 };
 
-// --- REEMPLAZA ESTAS DOS LÍNEAS CON TUS DATOS ---
-const CLIENT_ID = 'ATXW4bRfOqugdRPGcGTcA9CDS4O-LNtAPojjGqqBt_NbYGGhAKrOiHtYdHwLg_I3QwZ4H1LMOoIk2Asy';
-const CLIENT_SECRET = 'EJjhCTcIRxbwCI0zxVBW3jKcW9WNvil__WB8tKko_tIc8bL6PbRa7eei1JovbJOpSr4YxB9TVj1PdYwb';
-// ------------------------------------------------
+
+const CLIENT_ID = __ENV.PAYPAL_CLIENT_ID;
+const CLIENT_SECRET = __ENV.PAYPAL_SECRET;
+
 
 const BASE_URL = 'https://api-m.sandbox.paypal.com';
 
